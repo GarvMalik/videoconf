@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timeless</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=PT+Sans:wght@400;700&family=Roboto:ital,wght@1,400;1,500;1,700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body class="">
+    <header>
+      <h1>Timeless</h1>
+      <h2>Video Conferencing App</h2>
+    </header>
+    <div class="box" id="video_display">
+      <div id="video_container" class="video-box" style="margin-top: 10%">
+        <div class="local_div you-video" id="div1">
+          <video
+            id="localVideo"
+            class="margin you"
+            autoplay
+            muted
+            playsinline
+          ></video>
+        </div>
+        <div class="remote_div other-video" id="div2">
+          <video id="remoteVideo" class="other" autoplay playsinline></video>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+    <script src="js\config.js"></script>
+
+    <script src="js\main.js"></script>
+  </body>
+</html>
